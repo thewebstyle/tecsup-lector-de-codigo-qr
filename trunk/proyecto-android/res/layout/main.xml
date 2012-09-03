@@ -1,12 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:layout_height="210dip"
+    android:layout_marginTop="10dip"
+    android:background="#83AFF2" >
 
     <TextView
-        android:layout_width="fill_parent"
+        android:id="@+id/tv_un"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello" />
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="9dip"
+        android:layout_marginTop="20dip"
+        android:text="Usuario:"
+        android:textColor="#444444"
+        android:textSize="10pt" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/tv_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_un"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="9dip"
+        android:layout_marginTop="15dip"
+        android:text="Contraseña:"
+        android:textColor="#444444"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#AA0000"
+        android:textSize="7pt" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_error"
+        android:layout_centerHorizontal="true"
+        android:text="Login" />
+
+    <EditText
+        android:id="@+id/et_un"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_un"
+        android:layout_toRightOf="@+id/tv_pw"
+        android:background="@android:drawable/editbox_background" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_pw"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_pw"
+        android:layout_toRightOf="@+id/tv_pw"
+        android:background="@android:drawable/editbox_background"
+        android:password="true" />
+
+</RelativeLayout>

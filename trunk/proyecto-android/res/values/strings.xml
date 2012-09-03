@@ -2,6 +2,8 @@
 <resources>
 
     <string name="hello">Hello World, PrincipalActivity!</string>
-    <string name="app_name">Proyecto-android</string>
+    <string name="app_name">.:: Sistema de Inventario ::.</string>
+    <color name="blanco">#FFFFFF</color>
+    <color name="negro">#000000</color>
 
 </resources>
