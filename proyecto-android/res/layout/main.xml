@@ -60,13 +60,4 @@
         android:layout_marginTop="28dp"
         android:text="Ingresar" />
 
-    <TextView
-        android:id="@+id/tv_error"
-        android:layout_width="fill_parent"
-        android:layout_height="40dip"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:textColor="#AA0000"
-        android:textSize="7pt" />
-
 </RelativeLayout>
