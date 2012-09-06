@@ -16,4 +16,14 @@ public class MenuActivity extends Activity{
         startActivity(new Intent(this, ScanActivity.class));
     }
 
+    
+    public void btnAyuda(View v){
+        startActivity(new Intent(this, AyudaActivity.class));
+    }
+    
+    
+    public void btnAcerca(View v){
+        startActivity(new Intent(this, AcercaActivity.class));
+    }
+    
 }

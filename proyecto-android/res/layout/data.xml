@@ -4,4 +4,160 @@
         android:layout_height="fill_parent"
         android:background="#00A4D9" >
 
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Código:"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:text="Equipo:"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="40dip"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:text="Modelo:"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="40dip"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:text="Marca:"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="40dip"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView4"
+            android:text="Serie:"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="40dip"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView5"
+            android:text="Estado:"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="40dip"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView6"
+            android:text="Detalle:"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="40dip"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/textView1"
+            android:ems="10"
+            android:editable="false" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/EditText01"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/textView2"
+            android:ems="10"
+            android:editable="false" />
+
+        <EditText
+            android:id="@+id/EditText02"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_below="@+id/textView3"
+            android:ems="10"
+            android:editable="false" />
+
+        <EditText
+            android:id="@+id/EditText03"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_below="@+id/textView4"
+            android:ems="10"
+            android:editable="false" />
+
+        <EditText
+            android:id="@+id/EditText04"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_below="@+id/textView5"
+            android:ems="10"
+            android:editable="false" />
+
+        
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView7"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/EditText05"
+            android:layout_below="@+id/textView7"
+            android:ems="10"
+            android:inputType="textPostalAddress" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/editText2"
+            android:layout_toRightOf="@+id/editText2"
+            android:text="Guardar" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignRight="@+id/editText2"
+            android:layout_below="@+id/textView6" />
+
     </RelativeLayout>

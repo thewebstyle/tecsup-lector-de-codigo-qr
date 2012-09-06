@@ -23,7 +23,9 @@
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/imageButton1"
             android:src="@drawable/ic_launcher"            
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:onClick="btnAyuda" />
+            									
 
         <ImageButton
             android:id="@+id/imageButton4"
@@ -32,6 +34,7 @@
             android:layout_marginLeft="100dip"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/imageButton2"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/ic_launcher" 
+            android:onClick="btnAcerca" />
 
     </RelativeLayout>
