@@ -34,6 +34,16 @@
             android:name=".AyudaActivity"
             
             android:label="@string/app_name" >        
+        </activity>  
+        <activity
+            android:name="AcercaActivity"
+            
+            android:label="@string/app_name" >        
+        </activity>
+        <activity
+            android:name="DataActivity"
+            
+            android:label="@string/app_name" >        
         </activity>        
     </application>	
 </manifest>
