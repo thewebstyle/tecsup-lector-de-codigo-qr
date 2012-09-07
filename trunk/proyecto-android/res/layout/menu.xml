@@ -1,40 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent" 
+        android:layout_height="fill_parent"
         android:background="#00A4D9" >
 
-        <ImageButton
-            android:id="@+id/imageButton1"
-            android:layout_width="100dip"
-            android:layout_height="100dip"
-            android:layout_alignParentLeft="true"
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="75dip"
-            android:layout_marginLeft="100dip"
-            android:src="@drawable/ic_launcher"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/ic_qr_grande"
             android:onClick="btnScan" />
 
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="100dip"
-            android:layout_height="100dip"
-            android:layout_marginLeft="100dip"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/imageButton1"
-            android:src="@drawable/ic_launcher"            
-            android:layout_centerHorizontal="true"
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_below="@+id/imageView1"
+            android:src="@drawable/ic_ayuda"
+            android:layout_marginTop="50dp"
             android:onClick="btnAyuda" />
-            									
 
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="100dip"
-            android:layout_height="100dip"
-            android:layout_marginLeft="100dip"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/imageButton2"
-            android:src="@drawable/ic_launcher" 
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_below="@+id/imageView2"
+            android:src="@drawable/ic_acerca"
+            android:layout_marginTop="50dp"
             android:onClick="btnAcerca" />
 
     </RelativeLayout>
