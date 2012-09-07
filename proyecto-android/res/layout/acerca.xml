@@ -11,7 +11,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/ic_logo_grande" />
 
         <TextView
             android:id="@+id/textView1"
