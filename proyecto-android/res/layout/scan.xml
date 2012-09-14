@@ -28,4 +28,31 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/button1" />
 
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/seekBar1"
+            android:layout_toLeftOf="@+id/button1"
+            android:text="ESCANEAR"
+            android:onClick="btnEscanear" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/seekBar1"
+            android:text="Código Escaneado: "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:text="Aca veras el resultado del QR"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
     </RelativeLayout>

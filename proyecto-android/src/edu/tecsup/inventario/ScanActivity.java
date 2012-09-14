@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class ScanActivity extends Activity{
 	/** Called when the activity is first created. */
@@ -14,6 +15,26 @@ public class ScanActivity extends Activity{
     
     public void btnData(View v){
         startActivity(new Intent(this, DataActivity.class));
+    }
+    
+    public void btnEscanear(View v){
+    	Intent intent = new Intent("com.google.zxing.client.android.SCAN");
+    	intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
+    	startActivityForResult(intent, 0);
+    }
+    
+    public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+    	   if (requestCode == 0) {
+    	      if (resultCode == RESULT_OK) {
+    	         String contents = intent.getStringExtra("SCAN_RESULT");
+    	         String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
+    	         TextView textView3 = (TextView) findViewById(R.id.textView3);
+    	    	 textView3.setText(contents);
+    	         // Handle successful scan
+    	      } else if (resultCode == RESULT_CANCELED) {
+    	         // Handle cancel
+    	      }
+    	   }    	   
     }
 
 }
