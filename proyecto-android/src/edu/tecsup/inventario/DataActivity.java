@@ -14,7 +14,7 @@ public class DataActivity extends Activity{
         setContentView(R.layout.data);    
         array_spinner=new String[3];
         array_spinner[0]="Operativo";
-        array_spinner[1]="DaÃ±ado";
+        array_spinner[1]="Dañado";
         array_spinner[2]="Malogrado";
         Spinner s = (Spinner) findViewById(R.id.spinner1);
         ArrayAdapter adapter = new ArrayAdapter(this,
