@@ -177,6 +177,7 @@ public class DataActivity extends Activity{
                                 }else if (equipo.getString(TAG_ESTADO).equals("Malogrado")){
                                 	txtEstado.setSelection(2);
                                 }
+                                System.out.println(txtEstado.getSelectedItem());
                                 txtObservacion.setText(equipo.getString(TAG_OBSERVACION));
      
                             }else{
@@ -212,7 +213,7 @@ public class DataActivity extends Activity{
             protected void onPreExecute() {
                 super.onPreExecute();
                 pDialog = new ProgressDialog(DataActivity.this);
-                pDialog.setMessage("Saving product ...");
+                pDialog.setMessage("Guardando equipo ...");
                 pDialog.setIndeterminate(false);
                 pDialog.setCancelable(true);
                 pDialog.show();
@@ -225,21 +226,21 @@ public class DataActivity extends Activity{
      
                 // getting updated data from EditTexts
                 String codigo = txtCodigo.getText().toString();
-                String equipo = txtNombre_Equipo.getText().toString();
-                String modelo = txtModelo.getText().toString();
-                String marca = txtMarca.getText().toString();
-                String serie = txtSerie.getText().toString();
-                //String estado = txtEstado.getText().toString();
+                //String equipo = txtNombre_Equipo.getText().toString();
+                //String modelo = txtModelo.getText().toString();
+                //String marca = txtMarca.getText().toString();
+                //String serie = txtSerie.getText().toString();                
+                String estado = txtEstado.getSelectedItem().toString();
                 String observacion = txtObservacion.getText().toString();
      
                 // Building Parameters
                 List<NameValuePair> params = new ArrayList<NameValuePair>();                
                 params.add(new BasicNameValuePair(TAG_CODIGO, codigo));
-                params.add(new BasicNameValuePair(TAG_NOMBRE_EQUIPO, equipo));
-                params.add(new BasicNameValuePair(TAG_MODELO, modelo));
-                params.add(new BasicNameValuePair(TAG_MARCA, marca));
-                params.add(new BasicNameValuePair(TAG_SERIE, serie));
-                //params.add(new BasicNameValuePair(TAG_ESTADO, estado));
+                //params.add(new BasicNameValuePair(TAG_NOMBRE_EQUIPO, equipo));
+                //params.add(new BasicNameValuePair(TAG_MODELO, modelo));
+                //params.add(new BasicNameValuePair(TAG_MARCA, marca));
+                //params.add(new BasicNameValuePair(TAG_SERIE, serie));
+                params.add(new BasicNameValuePair(TAG_ESTADO, estado));
                 params.add(new BasicNameValuePair(TAG_OBSERVACION, observacion));
      
                 // sending modified data through http request
